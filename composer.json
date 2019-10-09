@@ -2,6 +2,7 @@
     "name": "rulin132/date-picker-bundle",
     "description": "DatePicker and DateTimePicker field type for Symfony2 and SonataAdminBundle.",
     "type": "symfony-bundle",
+    "license": "MIT"
     "authors": [
         {
             "email": "studenikin.s@gmail.com",
