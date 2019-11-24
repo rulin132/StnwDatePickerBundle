@@ -17,8 +17,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('stnw_date_picker');
+        $treeBuilder = new TreeBuilder('stnw_date_picker');
+        $rootNode = method_exists(TreeBuilder::class, 'getRootNode') ? $treeBuilder->getRootNode() : $treeBuilder->root('stnw_date_picker');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
